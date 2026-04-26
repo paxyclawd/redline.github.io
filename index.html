@@ -1,164 +1,257 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Redline Garage premium automotive services and upcoming garage cafe. Book service, call, get directions, or follow on Instagram.">
-    <title>Redline Garage | Auto Care Done Right</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main class="site-shell" aria-label="Redline Garage quick links">
-      <section class="hero-panel" aria-labelledby="hero-title">
-        <div class="logo-wrap">
-          <img class="brand-logo" src="assets/redline-logo.png" alt="Redline Garage">
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1C1C1E" />
+  <title>Redline Garage — Auto Care Done Right</title>
+  <meta name="description" content="Wash, service, paint, decor and custom builds at Redline Garage. Garage cafe coming soon." />
 
-        <div class="status-row" aria-label="Current status">
-          <span class="status-chip">Garage Open</span>
-          <span class="status-chip status-chip--soon">Cafe Soon</span>
-        </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-        <div class="hero-copy">
-          <p class="eyebrow">Premium auto care</p>
-          <h1 id="hero-title">Auto Care Done Right</h1>
-          <p class="subtitle">Wash, service, paint, decor and custom work with a premium garage cafe in the making.</p>
-        </div>
-      </section>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-      <section class="cta-panel" aria-label="Quick actions">
-        <a class="cta-link" href="https://wa.me/918890980404?text=Hi%20Redline%20Garage%2C%20I%20want%20to%20book%20a%20service.">
-          <span class="cta-icon" aria-hidden="true">WA</span>
-          <span>Book Service on WhatsApp</span>
-        </a>
-        <a class="cta-link" href="tel:+918890920100">
-          <span class="cta-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M8.6 4.4 10.2 8 8.7 9.4c1.1 2.4 3 4.3 5.4 5.4l1.4-1.5 3.6 1.6-.8 4c-.1.7-.8 1.2-1.5 1.1A14.8 14.8 0 0 1 4 7.3c-.1-.7.4-1.4 1.1-1.5l3.5-.8Z"/>
+  <!-- Decorative ambient glows / red key-light -->
+  <div class="ambient" aria-hidden="true">
+    <span class="glow glow-red"></span>
+    <span class="glow glow-brass"></span>
+    <span class="glow glow-cursor"></span>
+    <span class="grid"></span>
+    <span class="noise"></span>
+  </div>
+
+  <main class="shell">
+
+    <!-- ============== LEFT COLUMN: HERO ============== -->
+    <section class="hero" aria-labelledby="hero-title" data-reveal>
+
+      <!-- Signature tachometer strip -->
+      <div class="tach" aria-hidden="true">
+        <span class="tach__ticks"></span>
+        <span class="tach__sweep"></span>
+        <span class="tach__redline"></span>
+        <span class="tach__label">RPM</span>
+      </div>
+
+      <div class="brandbar">
+        <img class="logo" src="assets/logo.png" alt="Redline Garage" width="301" height="145" />
+        <span class="badge-line" aria-hidden="true"></span>
+      </div>
+
+      <div class="chips" role="list">
+        <span class="chip chip--live" role="listitem">
+          <span class="chip__dot"></span>
+          Garage Open
+        </span>
+        <span class="chip chip--soon" role="listitem">
+          <span class="chip__spark"></span>
+          Cafe Soon
+        </span>
+      </div>
+
+      <h1 id="hero-title" class="headline">
+        Auto Care<br/>Done Right.
+      </h1>
+
+      <p class="subtitle">
+        Wash, service, paint, decor and custom builds — with a premium garage cafe in the making.
+      </p>
+
+    </section>
+
+    <!-- ============== RIGHT COLUMN: CTA PANEL ============== -->
+    <section class="cta-panel" aria-label="Quick actions" data-reveal>
+
+      <header class="panel-head">
+        <span class="panel-head__kicker">Quick Actions</span>
+        <span class="panel-head__rule" aria-hidden="true"></span>
+      </header>
+
+      <nav class="links" aria-label="Primary contact links">
+
+        <!-- Book Service on WhatsApp -->
+        <a class="link" href="https://wa.me/918890980404?text=Hi%20Redline%20Garage%2C%20I%20want%20to%20book%20a%20service." target="_blank" rel="noopener">
+          <span class="link__icon">
+            <!-- WhatsApp glyph -->
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M16.04 4C9.94 4 5 8.94 5 15.04c0 2.16.61 4.18 1.66 5.9L5 28l7.27-1.62a11 11 0 0 0 3.77.66h.01C22.14 27.04 27 22.1 27 16s-4.94-12-10.96-12Zm0 21.83c-1.16 0-2.3-.27-3.3-.78l-.24-.13-4.31.96.92-4.2-.16-.27a9.16 9.16 0 0 1-1.42-4.87c0-5.07 4.13-9.2 9.21-9.2A9.18 9.18 0 0 1 25.21 16c0 5.07-4.13 9.83-9.17 9.83Zm5.27-6.88c-.29-.14-1.71-.84-1.97-.94-.27-.1-.46-.14-.65.14-.19.29-.74.94-.91 1.13-.17.19-.34.22-.62.07-.29-.14-1.21-.45-2.31-1.43-.85-.76-1.43-1.7-1.6-1.99-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5h-.55c-.19 0-.5.07-.77.36-.26.29-1 1-1 2.43s1.03 2.82 1.17 3.02c.14.19 2.03 3.1 4.92 4.34.69.3 1.22.48 1.64.61.69.22 1.31.19 1.81.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/>
             </svg>
           </span>
-          <span>Call Now</span>
+          <span class="link__body">
+            <span class="link__title">Book Service</span>
+            <span class="link__sub">Chat on WhatsApp</span>
+          </span>
+          <span class="link__chev" aria-hidden="true">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3.5 10 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
         </a>
-        <a class="cta-link" href="https://maps.app.goo.gl/gWEX7PB6ip6kyxFr5">
-          <span class="cta-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/>
-              <circle cx="12" cy="10" r="2.7"/>
+
+        <!-- Call -->
+        <a class="link" href="tel:+918890920100">
+          <span class="link__icon">
+            <!-- Phone glyph -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M19.6 21c-2.4 0-4.83-.6-7.3-1.81a22.22 22.22 0 0 1-7.49-7.49C3.6 9.23 3 6.79 3 4.4 3 3.62 3.62 3 4.4 3h3.13c.66 0 1.23.45 1.39 1.09l.66 2.65a1.43 1.43 0 0 1-.39 1.4L7.27 9.97a16.95 16.95 0 0 0 6.76 6.76l1.83-1.92a1.4 1.4 0 0 1 1.4-.39l2.65.66c.64.16 1.09.73 1.09 1.39v3.13c0 .78-.62 1.4-1.4 1.4Z" fill="currentColor"/>
             </svg>
           </span>
-          <span>Get Directions</span>
+          <span class="link__body">
+            <span class="link__title">Call Now</span>
+            <span class="link__sub">Talk to the workshop</span>
+          </span>
+          <span class="link__chev" aria-hidden="true">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3.5 10 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
         </a>
-        <a class="cta-link" href="https://www.instagram.com/redlinejaipur/">
-          <span class="cta-icon" aria-hidden="true">IG</span>
-          <span>Follow on Instagram</span>
+
+        <!-- Directions -->
+        <a class="link" href="https://maps.app.goo.gl/gWEX7PB6ip6kyxFr5" target="_blank" rel="noopener">
+          <span class="link__icon">
+            <!-- Pin glyph -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.6 7.1 11.4 7.4 11.66.35.29.85.29 1.2 0C12.9 21.4 20 15.6 20 10a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="link__body">
+            <span class="link__title">Get Directions</span>
+            <span class="link__sub">Open in Maps</span>
+          </span>
+          <span class="link__chev" aria-hidden="true">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3.5 10 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
         </a>
-      </section>
 
-      <section class="services-section" aria-labelledby="services-title">
-        <div class="section-heading">
-          <p class="eyebrow">Workshop services</p>
-          <h2 id="services-title">Built For Everyday Drives And Custom Ambition</h2>
-        </div>
+        <!-- Instagram -->
+        <a class="link" href="https://www.instagram.com/redlinejaipur/" target="_blank" rel="noopener">
+          <span class="link__icon">
+            <!-- Instagram glyph -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.75 1.6a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="link__body">
+            <span class="link__title">Follow Us</span>
+            <span class="link__sub">@redlinejaipur on Instagram</span>
+          </span>
+          <span class="link__chev" aria-hidden="true">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3.5 10 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <path d="M6.5 18.5h19l-1.7-5.2a4 4 0 0 0-3.8-2.8h-8a4 4 0 0 0-3.8 2.8l-1.7 5.2Z"/>
-                <path d="M8 18.5v4h4v-2h8v2h4v-4"/>
-                <path d="M10 15.5h12"/>
-              </svg>
-            </span>
-            <h3>Car Wash</h3>
-          </article>
+      </nav>
+    </section>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <path d="M8 22.5l2.2-8.2 6.4-6.4 5.5 5.5-6.4 6.4-7.7 2.7Z"/>
-                <path d="M18.7 5.9l5.4 5.4"/>
-                <path d="M10.2 14.3l5.5 5.5"/>
-              </svg>
-            </span>
-            <h3>Denting &amp; Painting</h3>
-          </article>
+    <div class="lane" aria-hidden="true"></div>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <path d="M16 6.5v4"/>
-                <path d="M16 21.5v4"/>
-                <path d="M9.3 9.3l2.8 2.8"/>
-                <path d="M19.9 19.9l2.8 2.8"/>
-                <path d="M6.5 16h4"/>
-                <path d="M21.5 16h4"/>
-                <path d="M9.3 22.7l2.8-2.8"/>
-                <path d="M19.9 12.1l2.8-2.8"/>
-                <circle cx="16" cy="16" r="3.8"/>
-              </svg>
-            </span>
-            <h3>Car Servicing</h3>
-          </article>
+    <!-- ============== SERVICES ============== -->
+    <section class="services" aria-labelledby="services-title" data-reveal>
+      <header class="section-head">
+        <span class="section-head__rule" aria-hidden="true"></span>
+        <h2 id="services-title" class="section-head__title">Workshop Services</h2>
+        <p class="section-head__sub">Bay-built. Workshop-finished.</p>
+      </header>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <path d="M11 19.5 6.8 23.7a2 2 0 0 0 2.8 2.8l4.2-4.2"/>
-                <path d="M18.4 6.4a7.2 7.2 0 0 0-6.1 10.9l-3.1 3.1 2.4 2.4 3.1-3.1A7.2 7.2 0 0 0 25.6 11l-4.2 4.2-4.6-4.6 4.2-4.2a7.2 7.2 0 0 0-2.6 0Z"/>
-              </svg>
-            </span>
-            <h3>Mechanical Repairs</h3>
-          </article>
+      <ul class="svc-grid" role="list">
+        <li class="svc">
+          <span class="svc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 14h14l-1.2-3.6A2 2 0 0 0 15.9 9H8.1a2 2 0 0 0-1.9 1.4L5 14Zm-1 1v3h2v-1h12v1h2v-3H4Zm3-2 .8-2.4a.5.5 0 0 1 .47-.34h7.46c.21 0 .4.13.47.34L17 13H7Z" fill="currentColor"/><circle cx="7.5" cy="16" r=".9" fill="currentColor"/><circle cx="16.5" cy="16" r=".9" fill="currentColor"/></svg>
+          </span>
+          <span class="svc__name">Car Wash</span>
+        </li>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <path d="M7 17h18"/>
-                <path d="M9 17l2.4-6h9.2L23 17"/>
-                <path d="M10 17v6"/>
-                <path d="M22 17v6"/>
-                <path d="M12 23h8"/>
-                <path d="M11 12h10"/>
-              </svg>
-            </span>
-            <h3>Car Decor</h3>
-          </article>
+        <li class="svc">
+          <span class="svc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 17 8.5-8.5 3 3L7 20H4v-3Zm10.4-9.6 1.6-1.6a1.4 1.4 0 0 1 2 0l1.6 1.6a1.4 1.4 0 0 1 0 2l-1.6 1.6-3.6-3.6Z" fill="currentColor"/></svg>
+          </span>
+          <span class="svc__name">Denting &amp; Painting</span>
+        </li>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <path d="M6 22.5h20"/>
-                <path d="M8 22.5l3-10h10l3 10"/>
-                <path d="M13 12.5V8h6v4.5"/>
-                <path d="M11 17.5h10"/>
-                <path d="M16 8V5"/>
-              </svg>
-            </span>
-            <h3>Custom Garage Work</h3>
-          </article>
-        </div>
-      </section>
+        <li class="svc">
+          <span class="svc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.5a9.5 9.5 0 0 1-15.6 7.3l1.5-1.5a7.5 7.5 0 1 0-2.7-7.4H8L4.5 14.5 1 11h2.5A9.5 9.5 0 0 1 22 12.5Zm-9.5-4.5a1 1 0 0 1 1 1V12l3 1.8a1 1 0 1 1-1 1.7L12 13.4V9a1 1 0 0 1 .5-1Z" fill="currentColor"/></svg>
+          </span>
+          <span class="svc__name">Car Servicing</span>
+        </li>
 
-      <section class="bottom-grid" aria-label="Launch and trust">
-        <article class="launch-card">
-          <p class="eyebrow">Launch update</p>
-          <h2>Garage is open. Cafe coming soon.</h2>
-          <p>Service bays are live. The cafe buildout is next.</p>
-        </article>
+        <li class="svc">
+          <span class="svc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.7 6.3a1 1 0 0 0-1.6-.3l-2.8 2.8-2-2 2.8-2.8a1 1 0 0 0-.3-1.6 5 5 0 0 0-6.5 6.5L3.6 16.6a2 2 0 1 0 2.8 2.8l7.7-7.7a5 5 0 0 0 6.5-6.5l1.1.1ZM5 19a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" fill="currentColor"/></svg>
+          </span>
+          <span class="svc__name">Mechanical Repairs</span>
+        </li>
 
-        <article class="trust-card">
-          <p class="eyebrow">Why visit</p>
-          <ul class="trust-list" aria-label="Trust points">
-            <li>Professional workshop</li>
-            <li>Quality tools &amp; products</li>
-            <li>Skilled mechanical work</li>
-            <li>Honest service</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-  </body>
+        <li class="svc">
+          <span class="svc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 14 8h6l-5 4 2 7-5-4-5 4 2-7-5-4h6l2-6Z" fill="currentColor"/></svg>
+          </span>
+          <span class="svc__name">Car Decor</span>
+        </li>
+
+        <li class="svc">
+          <span class="svc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 4a6 6 0 0 1 6 6h-2.5a3.5 3.5 0 1 0-3.5 3.5V18a6 6 0 0 1 0-12Z" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>
+          </span>
+          <span class="svc__name">Custom Garage Work</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="lane" aria-hidden="true"></div>
+
+    <!-- ============== LAUNCH HIGHLIGHT ============== -->
+    <section class="launch" aria-labelledby="launch-title" data-reveal>
+      <div class="launch__inner">
+        <span class="launch__kicker">
+          <span class="launch__pulse" aria-hidden="true"></span>
+          Now &amp; Next
+        </span>
+        <h2 id="launch-title" class="launch__title">
+          Garage is open.<br/><span class="launch__title--accent">Cafe coming soon.</span>
+        </h2>
+        <p class="launch__copy">
+          Service bays are live. The cafe buildout is next.
+        </p>
+      </div>
+      <div class="launch__edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============== TRUST ============== -->
+    <section class="trust" aria-labelledby="trust-title" data-reveal>
+      <header class="section-head section-head--center">
+        <span class="section-head__rule" aria-hidden="true"></span>
+        <h2 id="trust-title" class="section-head__title">Why Redline</h2>
+      </header>
+
+      <ul class="trust-grid" role="list">
+        <li class="trust-item">
+          <span class="trust-item__num">01</span>
+          <span class="trust-item__text">Professional workshop</span>
+        </li>
+        <li class="trust-item">
+          <span class="trust-item__num">02</span>
+          <span class="trust-item__text">Quality tools &amp; products</span>
+        </li>
+        <li class="trust-item">
+          <span class="trust-item__num">03</span>
+          <span class="trust-item__text">Skilled mechanics</span>
+        </li>
+        <li class="trust-item">
+          <span class="trust-item__num">04</span>
+          <span class="trust-item__text">Honest service</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- minimal sign-off, no full footer -->
+    <p class="signoff">Built in the bay. <span>Redline / 26</span></p>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
